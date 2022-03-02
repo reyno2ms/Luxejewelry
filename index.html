@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+         /*.container > * {
+            border:2px solid lightblue;
+        }*/
+        @font-face {
+            font-family:libra;
+            src: url(fonts/Libre-Bodoni/LibreBodoni-Regular.otf);
+        }
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+        li {
+            display:inline;
+            padding:195px;
+        }
+        ul {
+            list-style-type: none;
+            float:right;
+        }
+        li a:hover {
+            color:#D9BBA9
+        }
+        .container {
+            display:grid;
+            grid-template-columns:repeat(12, 1fr);
+        }
+        .img {
+            max-width:100%;
+            height:auto;
+            padding-left:10px;
+            padding-top:10px;
+        }
+        header {    
+            grid-column:1/13;
+            grid-row:1/8;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-position:center;
+            background-size:cover;
+            background-image:url(images/header.jpg);
+        }
+        .logo {
+            grid-column:1/13;
+            text-align:center;
+            padding-top:30px;
+        }
+    
+        nav {
+            grid-column:1/13;
+            background-color:#000;
+            color:#fffffa;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            min-height:45px;
+            font-family: interstate,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        section {
+            grid-column:1/13;
+            font-family:libra;
+            color: #D9BBA9;
+            padding-top:20px;
+            font-size:40px;
+        }
+        .section1 {
+            grid-column:1/13;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            font-family:libra;
+        }
+        .section2 {
+           grid-column:1/13;
+           max-height:360px;
+           padding:20px;
+           text-align:center;
+           font-family:libra;
+        }
+        .section3 {
+            grid-column:1/13;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            font-family: libra;
+        }
+        .section4 {
+            grid-column:1/13;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            font-family:libra;
+        }
+        .about1 {
+            grid-column:1/13;
+            background-color:#D9BBA9;
+            color: #F2EDE9;
+            font-family: interstate,sans-serif;
+            font-style: normal;
+            font-size:35px;
+            text-align:center;
+        }
+        .paragraph1 {
+            font-family:libra;
+            font-size:20px;
+            text-align:center;
+            padding-left:20px;
+            padding-right:20px;
+            
+        }
+        .about2 {
+            grid-column:1/13;
+            background-color:#D9BBA9;
+            padding:20px;
+            text-align:center;
+        }
+        footer {
+            grid-column:1/13;
+            background-color:#000;
+        }
+        
+        @media only screen and (min-width:620px) {
+            header {    
+            grid-column:1/13;
+            grid-row:1/8;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-position:center;
+            background-size:cover;
+            background-image:url(images/header.jpg);
+            }
+            .logo {
+            grid-column:1/13;
+            text-align:center;
+            padding-top:30px;
+            }
+            nav {
+            grid-column:1/13;
+            background-color:#000;
+            color:#fffffa;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            }
+            section{
+            grid-column:1/13;
+            background-color:#F2EDE9;
+            text-align:center;
+            }
+            .section1 {
+            grid-column:1/7;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            background-color:#F2EDE9;
+        }
+            .section2 {
+            grid-column:7/13;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            background-color:#F2EDE9;
+            }
+            .section3 {
+            grid-column:1/7;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            background-color:#F2EDE9;
+            }
+            .section4 {
+            grid-column:7/13;
+            max-height:360px;
+            padding:20px;
+            text-align:center;
+            background-color:#F2EDE9;
+            }
+            .about1 {
+                grid-column:1/7;
+            }
+            .about2 {
+                grid-column:7/13;
+            }
+            footer {
+            grid-column:1/13;
+            }
+    }
+    @media only screen and (min-width:900px) {
+        header {    
+            grid-column:1/13;
+            grid-row:1/8;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-position:center;
+            background-size:cover;
+            background-image:url(images/header.jpg);
+            }
+        .logo {
+            grid-column:1/13;
+            text-align:center;
+            padding-top:30px;
+            }
+        nav {
+            grid-column:1/13;
+            background-color:#000;
+            color:#fffffa;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            }
+            section {
+            grid-column:1/13;
+            }
+            .section1 {
+            grid-column:1/4;
+            max-height:360px;
+            text-align:center;
+            padding:20px;
+            padding-bottom:30px;
+        }
+            .section2 {
+                grid-column:4/7;
+                max-height:360px;
+                text-align:center;
+                padding:20px;
+                padding-bottom:30px;
+            }
+            .section3 {
+                grid-column:7/10;
+                max-height:360px;
+                text-align:center;
+                padding:20px;
+                padding-bottom:30px;
+            }
+            .section4 {
+                grid-column:10/13;
+                max-height:360px;
+                text-align:center;
+                padding:20px;
+                padding-bottom:30px;
+            }
+            .about1 {
+                grid-column:1/7;
+               
+            }
+            .about2 {
+                grid-column:7/13;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/kqk2xsr.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="logo">
+            <picture>
+            <source srcset="images/smalllogo.png" media="(max-width:630px)">
+            <source srcset="images/logo2.png">
+            <img src="images/logo2.png" alt="logo" style="width:auto;">
+            </picture>
+           </div>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product1.html">Products</a></li>
+            <li><a href="policy.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <p>Shop What's New!</p>
+        </section>
+        <div class="section1">
+               <img src="images/bracelet1.jpg">
+               <p>Gold Chain Bracelet<br>
+               $35</p>
+        </div>
+        <div class="section2">
+               <img src="images/necklacebook.jpg">
+               <p>Gold Shell Necklace<br>
+            $45</p>
+        </div>
+        <div class="section3">
+              <img src="images/earring1.jpg">
+              <p>Minimalist Gold Earrings<br>
+            $25</p>
+        </div>
+        <div class="section4">
+               <img src="images/box.jpg">
+               <p>12 Piece Set of Gold Rings<br>
+            $30</p>
+        </div>
+        <div class="about1">
+          <p>Get to know Luxe Jewelry!</p>
+          <div class="paragraph1">
+              <p>We are a company located in Virginia and we believe that jewelry is a great way to express yourself. Buy, wear, or gift it, whenever or wherever you want! </p>
+              <p>Feel free to find us on social media to come to us with any questions, comments, or concerns!</p>
+          </div>
+        </div>
+        <div class="about2">
+            <img src="images/fancyearring.jpg">
+        </div>
+        <footer>
+            footer space 
+        </footer>
+    </div>
+</body>
+</html>
